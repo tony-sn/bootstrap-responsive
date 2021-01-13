@@ -1,0 +1,566 @@
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+.line::after {
+  content: "";
+  width: 0px;
+  height: 3px;
+  background-image: linear-gradient(to right, #9d8afc, #7f67f8);
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  border-radius: 2px;
+  transition: all 0.5s ease;
+}
+
+.btn {
+  border-radius: 0;
+  padding: 10px 30px;
+  margin: 0 2px;
+}
+
+.btn-purple {
+  border: 2px solid #7f67f8;
+
+  background-color: #7f67f8;
+  color: white;
+}
+
+.btn-purple:hover {
+  border: 2px solid #7f67f8;
+  background-color: transparent;
+  color: #7f67f8;
+}
+
+.btn-white {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+.btn-white:hover {
+  border: 2px solid white;
+  background-color: white;
+  color: #7f67f8;
+}
+
+/* HEADER CSS */
+.header__content .header-social a,
+.header__content .phone-call {
+  text-decoration: none;
+}
+
+.header__content .header-social i:hover,
+.header__content .phone-call:hover > * {
+  transition: all 0.5s;
+  color: #7f67f8;
+}
+
+.header__content .header-social i {
+  margin: 0 10px;
+  color: white;
+}
+
+.header__content .phone-call {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.header__content .fa-phone {
+  font-size: 1.5rem;
+  transform: rotate(-90deg);
+}
+
+.header__navbar h1 {
+  color: #868c94;
+}
+
+.header__navbar span.title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #7f67f8;
+}
+
+.navbar-light {
+  background-color: white;
+}
+
+.navbar-light .navbar-nav .nav-item a:hover {
+  transition: all 0.5s;
+}
+
+.navbar-nav .nav-item {
+  padding: 0 10px;
+  position: relative;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  line-height: 14px;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-item:hover::after,
+.header__navbar .nav-item.active::after {
+  width: 100px;
+}
+
+.navbar-light .navbar-nav .nav-item.active a,
+.navbar-light .navbar-nav .nav-item:hover a {
+  color: #7f67f8;
+}
+
+.header__navbar .dropdown-menu.show {
+  display: inline-block;
+}
+
+.header__navbar .navbar-toggler:focus {
+  outline: #7f67f8;
+}
+
+/* END HEADER CSS */
+
+/* CAROUSEL CSS */
+.carousel-item__overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, black, transparent);
+}
+
+.carousel-caption {
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  margin: 0 auto;
+}
+
+.carousel-caption h1 {
+  line-height: 1.2;
+  letter-spacing: 7px;
+}
+
+.carousel-caption p {
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+.carousel-item__cta .btn-white {
+  letter-spacing: 2px;
+}
+
+.my-carousel .carousel-indicators {
+  bottom: 50px;
+  left: 0px;
+}
+
+.my-carousel .carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  background: #7f67f8;
+  border: 1px solid #7f67f8;
+  border-radius: 50%;
+}
+
+.my-carousel .carousel-indicators li.active {
+  background: white;
+  border-color: white;
+}
+
+/* END CAROUSEL CSS */
+
+/* INFO CSS */
+.info {
+  padding: 70px 0;
+  position: relative;
+}
+
+.info h1 {
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.info__content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.info__content p {
+  color: #868c94;
+  letter-spacing: 1px;
+  padding-bottom: 1rem;
+}
+
+.info-detail h3 {
+  margin: 20px 0;
+}
+
+.info-detail p,
+.number__stats p {
+  color: #868c94;
+  letter-spacing: 1px;
+}
+
+.info-detail > p {
+  padding-bottom: 5rem;
+}
+
+.info .info-detail {
+  margin-top: 2.5rem;
+}
+
+.info .info-detail i {
+  font-size: 2.5rem;
+  color: #f97c69;
+}
+
+.info .info-detail i:hover {
+  color: #7f67f8;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+/* END INFO CSS */
+
+/*NUMBER CSS*/
+
+.number__content {
+  background-image: url(../images/3.jpg);
+  background-size: cover;
+  padding: 0;
+}
+
+.number__cta {
+  margin: 0 30px;
+}
+
+.number__cta h3 {
+  padding-right: 30px;
+  line-height: 3.5rem;
+}
+
+.number__cta .btn {
+  letter-spacing: 1px;
+  line-height: 1.5;
+}
+
+.number__stats {
+  background-color: white;
+  padding: 30px 50px;
+}
+
+.number__stats .number__stats-content p {
+  padding-bottom: 5rem;
+}
+
+.number__stats .row p {
+  padding-bottom: 2.5rem;
+}
+
+.number__stats h4 {
+  font-weight: 400;
+  padding: 2.5rem 5.5rem 1rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.number__stats h3 {
+  letter-spacing: 1px;
+}
+
+.number__stats span {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #f97c69;
+  letter-spacing: 1px;
+}
+
+.number__stats .num:hover {
+  color: #7f67f8;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+/*END NUMBER CSS*/
+
+/*SERVICE CSS*/
+.service__content {
+  background-image: url(../images/3.jpg);
+  background-size: cover;
+}
+
+.service__item {
+  background-color: white;
+  letter-spacing: 1px;
+}
+
+.service__item h3 {
+  font-weight: 600;
+}
+
+.service__item i {
+  font-size: 2.5rem;
+  padding: 30px 0 15px;
+}
+
+.service__item .col-white i {
+  color: #f97c69;
+}
+
+.service__item p {
+  line-height: 2;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.col-orange {
+  background-color: #f97c69;
+  color: white;
+}
+
+.col-white {
+  background-color: white;
+}
+
+/*END SERVICE CSS*/
+
+/* TESTIMONIAL CSS */
+.testimonial {
+  padding: 70px 0;
+}
+
+.testimonial > h3,
+.testimonial > p {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.testimonial p {
+  color: #868c94;
+}
+
+.testimonial__content {
+  padding-top: 50px;
+}
+
+.testimonial__content h3 {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.testimonial__content .owl-carousel.owl-drag .owl-item > div {
+  text-align: center;
+}
+
+.testimonial__content .owl-carousel .owl-item img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid #7f67f8;
+  margin: 0 auto;
+}
+
+.testimonial__content .owl-theme .owl-nav {
+  visibility: hidden;
+}
+
+.testimonial__content .owl-theme .owl-dots .owl-dot span {
+  background-color: #f97c69;
+  width: 12px;
+  height: 12px;
+  opacity: 0.5;
+  margin: 0 5px;
+}
+
+.testimonial__content .owl-theme .owl-dots .owl-dot.active span {
+  opacity: 1;
+}
+
+.testimonial__content .owl-theme .owl-dots .owl-dot:focus {
+  outline: none;
+}
+
+/* END TESTIMONIAL CSS */
+
+/* FOOTER CSS */
+.footer__content {
+  padding: 70px 0;
+  background-color: black;
+}
+
+footer h3 {
+  color: #f97c69;
+  padding: 30px 0;
+  letter-spacing: 1.5px;
+}
+
+.footer-form p,
+.footer-contact p {
+  color: #868c94;
+  font-size: 1.2rem;
+  line-height: 2;
+  padding: 0 80px 0 0;
+}
+
+.footer-form input {
+  background-color: black;
+  color: #252525;
+  border: 1px solid white;
+  border-radius: 0px;
+  padding: 10px 100px 10px 10px;
+}
+
+.footer-form button {
+  padding: 10px 15px;
+  border: 1px solid white;
+  border-left: #7f67f8;
+  background-color: #7f67f8;
+}
+
+.footer-form button i {
+  color: white;
+}
+
+.footer-form button:hover {
+  background-color: #f97c69;
+}
+
+.footer-contact p {
+  margin-bottom: 0.5rem;
+}
+
+.footer-contact p a,
+.footer-nav a {
+  color: #868c94;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.footer-contact i {
+  font-size: 1.1rem;
+  margin-right: 5px;
+  color: #f97c69;
+}
+
+.footer-nav a {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.footer__copyright {
+  background-color: #252525;
+}
+
+.footer__copyright p {
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 500;
+  margin: 0 auto;
+}
+
+.footer__copyright a {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer__copyright a:hover,
+.footer-nav a:hover {
+  color: #f97c69;
+  transition: all 0.5s;
+}
+
+/* END FOOTER CSS */
+
+/* BACK TO TOP CSS */
+.backToTop {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .owl-carousel .owl-item {
+    text-align: center;
+  }
+
+  .owl-carousel .item {
+    float: none;
+    display: inline-block;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .container {
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  .footer__content .footer-contact {
+    padding-right: 0 !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .info .info-detail div[class*="col"] {
+    border-right: 1px solid rgb(222, 226, 230);
+  }
+
+  .info .info-detail div:last-of-type {
+    border: none;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+@media (max-width: 991px) {
+  .carousel-caption {
+    visibility: hidden;
+  }
+
+  .number .number__cta h3,
+  .number .number__stats-content h4 {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+}
+
+/* Set width to make card deck cards 100% width */
