@@ -34,7 +34,7 @@
 
   <body>
     <!-- HEADER -->
-    <header class="header">
+    <header class="header" id="home">
       <div
         class="header__content container-fluid text-white bg-dark d-flex justify-content-between aligns-center py-2 px-5"
       >
@@ -67,13 +67,13 @@
         <div class="collapse navbar-collapse" id="myNavBar">
           <ul class="navbar-nav ml-auto" id="mainNav">
             <li class="nav-item line active">
-              <a class="nav-link" href="#">HOME</a>
+              <a class="nav-link" href="#home">HOME</a>
             </li>
             <li class="nav-item line">
-              <a class="nav-link" href="#">ABOUT</a>
+              <a class="nav-link" href="#info">ABOUT</a>
             </li>
             <li class="nav-item line">
-              <a class="nav-link" href="#">GALLERY</a>
+              <a class="nav-link" href="#number">GALLERY</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -84,8 +84,8 @@
                 >PAGES</a
               >
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">SERVICES</a>
-                <a class="dropdown-item" href="#">TESTIMONIALS</a>
+                <a class="dropdown-item" href="#services">SERVICES</a>
+                <a class="dropdown-item" href="#testimonials">TESTIMONIALS</a>
               </div>
             </li>
             <li class="nav-item line">
@@ -167,7 +167,7 @@
     <!-- END CAROUSEL -->
 
     <!-- INFO -->
-    <section class="info">
+    <section class="info" id="info">
       <div class="container-fluid text-center">
         <div class="info__content border-bottom">
           <h1 class="display-4">What you get</h1>
@@ -205,7 +205,7 @@
     </section>
     <!-- END INFO -->
     <!-- NUMBERS -->
-    <section class="number">
+    <section class="number" id="number">
       <div class="number__content container-fluid text-center">
         <div
           class="number__cta d-flex justify-content-center align-items-center p-5"
@@ -245,7 +245,7 @@
     <!-- END NUMBERS -->
 
     <!-- SERVICES -->
-    <section class="service">
+    <section class="service" id="services">
       <div class="service__content container-fluid text-center p-5">
         <div class="text-white">
           <h3 class="display-4">Our Main Services</h3>
@@ -295,7 +295,7 @@
     <!-- END SERVICES -->
 
     <!-- TESTIMONIALS -->
-    <section class="testimonial">
+    <section class="testimonial" id="testimonials">
       <div class="container-fluid text-center">
         <h3 class="display-4">Our Customers'Opinion</h3>
         <p>
@@ -494,16 +494,6 @@
         },
       });
     </script>
-
-    <!-- VENOBOX -->
-    <!-- <link rel="stylesheet" href="css/venobox.css" /> -->
-
-    <!-- VENOBOX SCRIPT -->
-    <!-- <script src="js/venobox.js"></script>
-    <script>
-      $(document).ready(function () {
-        $(".venobox").venobox();
-      });
-    </script> -->
+   
   </body>
 </html>
